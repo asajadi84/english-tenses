@@ -4,12 +4,13 @@
  * Configures SASS variables and Vuetify overwrites
  */
 
+@use 'sass:string';
 @use 'vuetify/settings' with (
   $color-pack: false,
   $utilities: false,
 
-  $heading-font-family: var(--font-heading),
-  $body-font-family: var(--font-body),
+  $heading-font-family: string.unquote('"Vazirmatn", sans-serif'),
+  $body-font-family: string.unquote('"Vazirmatn", sans-serif'),
 
   $grid-breakpoints: (
     'xs': 0,
